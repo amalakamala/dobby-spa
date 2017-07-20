@@ -1,0 +1,132 @@
+*{
+	margin: $cero;
+}
+
+.navbar{
+	background-color: $background_nav_f;
+	.navbar-default{
+		border-bottom-width: $cero;
+		margin-bottom:$cinco;
+		.navbar-nav{
+			padding-left:$cuatrocientos;		
+			li{
+				a{
+					color:$blanco;
+					border-color:none;
+				}
+				a:hover{
+					color:$background_amarillo;	
+				}
+			}
+		}
+	}
+}
+
+.sect-dos{
+	background-color: $background_amarillo;
+	height: $cuatrocientos + $diez;
+	.caja-cir-todo{
+		position: relative;
+		bottom: $sesenta;
+		.img-cir {
+			img{
+				border-radius: $radius;
+				padding: $diez;
+				background-color: $color_cir;
+				width: $ochenta-ciento;				
+			}
+		}
+		h5{
+			margin-top:$treinta;
+		}
+		p{
+			font-weight:$doscientos-w;
+			font-size:$doce;
+		}
+		.read-more{
+			p{
+				font-weight:$cuatrocientos;	
+				padding:$cinco;
+				background-color: $color_cir;
+				margin: $cuarenta $ochenta $cero $ochenta;
+			}			
+		}
+	}
+}
+
+
+.welcome{
+	background-color: $background_gris;
+	.img-welcome{
+		margin: $cincuenta $cero;
+		img{
+			border-radius: $diez;
+		}	
+	}
+	.text-welcome{
+		margin: $treinta $cero;		
+		h4{
+			color: $color_melocoton;
+			font-weight: $doscientos-w;
+			text-align: center;
+		}
+		p{
+			.glyphicon{
+				color: $color_melocoton;
+			}
+		}
+	}
+}
+
+.about-gift{
+	background-color: $background_cafe_about;
+	padding: $cincuenta $cero;
+	.text-about-welcome{
+		color: $background_amarillo;
+		h3{
+			font-weight:$doscientos-w;
+		}
+		hr{
+			width: $radius;
+			float: right;
+			padding-right: 3px;
+
+		}
+		.fa-circle-thin{
+			color: $blanco;
+		    position: relative;
+		    left: 280px;
+		    bottom: 3px;
+			clear: both;
+			padding-top:15px;
+		}
+		.fa-circle-thin:before {
+
+		    background-color: #392C2C;
+		    content: "\f1db";
+		}
+		img{			
+			float: left;
+			border-radius: $veinte;
+			margin: $treinta;
+		}
+
+	}
+	.text-about-gift{
+		color: $background_amarillo;		
+		h3{
+			font-weight:$doscientos-w;
+		}
+		hr{
+			width: $radius;
+		}
+		img{
+			float: right;
+			border-radius: $veinte;
+			margin: $treinta;
+		}		
+	}
+}
+
+
+
