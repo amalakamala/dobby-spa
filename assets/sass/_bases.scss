@@ -29,7 +29,7 @@
 .sect-dos{
 	width: 100%;
 	background-color: $background_amarillo;
-	height: $cuatrocientos + $diez;
+	height: 30%;
 	.caja-cir-todo{
 		position: relative;
 		bottom: $sesenta;
@@ -205,11 +205,24 @@ footer{
 
 
 
-@media (max-width: 600px){
+@media (min-width: 1px) and (max-width: 600px){
+	.carrusel{
+		position: relative;
+		top: 80px;
+	}
 	.sect-dos{
-		.caja-cir-todo{}
+		.caja-cir-todo{
 		position: relative;
 		bottom: 0;
+			.img-cir {
+				p{
+					font-weight:$cuatrocientos;	
+					padding:$cinco;
+					background-color: $color_cir;
+					margin: $cuarenta $ochenta $cero $ochenta;
+				}	
+			}
+		}
 	}	
 }
 

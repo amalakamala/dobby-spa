@@ -5821,7 +5821,7 @@ button.close {
 .sect-dos {
   width: 100%;
   background-color: #E3DAA9;
-  height: 410px; }
+  height: 30%; }
   .sect-dos .caja-cir-todo {
     position: relative;
     bottom: 60px; }
@@ -5935,5 +5935,19 @@ footer {
     color: #E3DAA9; }
   footer .footer-final p {
     font-size: 12px; }
+
+@media (min-width: 1px) and (max-width: 600px) {
+  .carrusel {
+    position: relative;
+    top: 80px; }
+
+  .sect-dos .caja-cir-todo {
+    position: relative;
+    bottom: 0; }
+    .sect-dos .caja-cir-todo .img-cir p {
+      font-weight: 400px;
+      padding: 5px;
+      background-color: #D1B172;
+      margin: 40px 80px 0 80px; } }
 
 /*# sourceMappingURL=main.css.map */
