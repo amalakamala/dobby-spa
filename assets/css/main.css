@@ -5805,17 +5805,21 @@ button.close {
 .navbar {
   background-color: #231717; }
   .navbar .navbar-default {
+    border-color: transparent;
     border-bottom-width: 0;
     margin-bottom: 5px; }
     .navbar .navbar-default .navbar-nav {
-      padding-left: 400px; }
+      padding-left: 400px;
+      text-align: center; }
       .navbar .navbar-default .navbar-nav li a {
         color: #FFFFFF;
         border-color: none; }
-      .navbar .navbar-default .navbar-nav li a:hover {
-        color: #E3DAA9; }
+      .navbar .navbar-default .navbar-nav li a:hover, .navbar .navbar-default .navbar-nav li a:focus {
+        color: #E3DAA9;
+        background-color: transparent; }
 
 .sect-dos {
+  width: 100%;
   background-color: #E3DAA9;
   height: 410px; }
   .sect-dos .caja-cir-todo {
@@ -5861,12 +5865,11 @@ button.close {
       font-weight: 200; }
     .about-gift .text-about-welcome hr {
       width: 50%;
-      float: right;
-      padding-right: 3px; }
+      float: right; }
     .about-gift .text-about-welcome .fa-circle-thin {
       color: #FFFFFF;
       position: relative;
-      left: 280px;
+      left: 278px;
       bottom: 3px;
       clear: both;
       padding-top: 15px; }
@@ -5882,10 +5885,55 @@ button.close {
     .about-gift .text-about-gift h3 {
       font-weight: 200; }
     .about-gift .text-about-gift hr {
-      width: 50%; }
+      width: 50%;
+      padding-left: 3px;
+      position: relative;
+      top: 10px;
+      margin-bottom: 0; }
+    .about-gift .text-about-gift .fa-circle-thin {
+      color: #FFFFFF;
+      position: relative;
+      bottom: 14px;
+      clear: both;
+      padding-top: 15px; }
+    .about-gift .text-about-gift .fa-circle-thin:before {
+      background-color: #392C2C;
+      content: "\f1db"; }
     .about-gift .text-about-gift img {
       float: right;
       border-radius: 20px;
-      margin: 30px; }
+      margin: 50px 30px 30px 30px; }
+
+footer {
+  background-color: #231717;
+  padding: 50px 20px;
+  color: #E3DAA9; }
+  footer .footer-follow .follow h4, footer .footer-follow .talking h4, footer .footer-follow .contact h4 {
+    font-weight: 200;
+    margin-bottom: 30px; }
+  footer .footer-follow .follow img {
+    margin-left: 15px;
+    background-color: #E3DAA9;
+    border-radius: 50%;
+    height: 100%;
+    border: 5px solid #D5734D; }
+  footer .footer-follow .talking .fa-quote-left {
+    color: #D5734D;
+    font-size: 30px;
+    float: left;
+    margin: 0 15px 10px 0; }
+  footer .footer-follow .talking p {
+    font-size: 13px; }
+  footer .footer-follow .contact h5 {
+    font-weight: 600;
+    margin-bottom: 20px; }
+  footer .footer-follow .contact p {
+    font-size: 12px; }
+    footer .footer-follow .contact p span {
+      color: #D5734D; }
+  footer .footer-final hr {
+    color: #E3DAA9; }
+  footer .footer-final p {
+    font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */
