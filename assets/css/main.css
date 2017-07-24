@@ -5821,7 +5821,7 @@ button.close {
 .sect-dos {
   width: 100%;
   background-color: #E3DAA9;
-  height: 30%; }
+  height: auto; }
   .sect-dos .caja-cir-todo {
     position: relative;
     bottom: 60px; }
@@ -5835,11 +5835,13 @@ button.close {
     .sect-dos .caja-cir-todo p {
       font-weight: 200;
       font-size: 12px; }
-    .sect-dos .caja-cir-todo .read-more p {
-      font-weight: 400px;
-      padding: 5px;
-      background-color: #D1B172;
-      margin: 40px 80px 0 80px; }
+    .sect-dos .caja-cir-todo .read-more {
+      margin-bottom: 30px; }
+      .sect-dos .caja-cir-todo .read-more p {
+        font-weight: 400px;
+        padding: 5px;
+        background-color: #D1B172;
+        margin: 40px 80px 0 80px; }
 
 .welcome {
   background-color: #F0F0F0; }
@@ -5908,46 +5910,64 @@ footer {
   background-color: #231717;
   padding: 50px 20px;
   color: #E3DAA9; }
-  footer .footer-follow .follow h4, footer .footer-follow .talking h4, footer .footer-follow .contact h4 {
-    font-weight: 200;
+  footer .footer-follow .follow {
     margin-bottom: 30px; }
-  footer .footer-follow .follow img {
-    margin-left: 15px;
-    background-color: #E3DAA9;
-    border-radius: 50%;
-    height: 100%;
-    border: 5px solid #D5734D; }
-  footer .footer-follow .talking .fa-quote-left {
-    color: #D5734D;
-    font-size: 30px;
-    float: left;
-    margin: 0 15px 10px 0; }
-  footer .footer-follow .talking p {
-    font-size: 13px; }
-  footer .footer-follow .contact h5 {
-    font-weight: 600;
-    margin-bottom: 20px; }
-  footer .footer-follow .contact p {
-    font-size: 12px; }
-    footer .footer-follow .contact p span {
-      color: #D5734D; }
+    footer .footer-follow .follow h4 {
+      font-weight: 200;
+      margin-bottom: 30px; }
+    footer .footer-follow .follow img {
+      margin-left: 15px;
+      background-color: #E3DAA9;
+      border-radius: 50%;
+      height: 100%;
+      border: 5px solid #D5734D; }
+  footer .footer-follow .talking {
+    margin-bottom: 30px; }
+    footer .footer-follow .talking .fa-quote-left {
+      color: #D5734D;
+      font-size: 30px;
+      float: left;
+      margin: 0 15px 10px 0; }
+    footer .footer-follow .talking p {
+      font-size: 13px; }
+  footer .footer-follow .contact {
+    margin-bottom: 30px; }
+    footer .footer-follow .contact h5 {
+      font-weight: 600;
+      margin-bottom: 20px; }
+    footer .footer-follow .contact p {
+      font-size: 12px; }
+      footer .footer-follow .contact p span {
+        color: #D5734D; }
   footer .footer-final hr {
     color: #E3DAA9; }
   footer .footer-final p {
     font-size: 12px; }
 
 @media (min-width: 1px) and (max-width: 600px) {
+  .navbar .navbar-default .navbar-nav {
+    padding-left: 0;
+    text-align: center; }
+
   .carrusel {
     position: relative;
-    top: 80px; }
+    top: 50px; }
 
   .sect-dos .caja-cir-todo {
     position: relative;
-    bottom: 0; }
+    bottom: -80px;
+    padding-bottom: 70px; }
     .sect-dos .caja-cir-todo .img-cir p {
       font-weight: 400px;
       padding: 5px;
       background-color: #D1B172;
-      margin: 40px 80px 0 80px; } }
+      margin: 40px 80px 0 80px; }
+
+  .about-gift .text-about-welcome .fa-circle-thin {
+    left: 170px; }
+
+  footer .footer-follow .follow img {
+    margin-left: 30px;
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

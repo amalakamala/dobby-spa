@@ -25,11 +25,10 @@
 	}
 }
 
-
 .sect-dos{
 	width: 100%;
 	background-color: $background_amarillo;
-	height: 30%;
+	height: auto;
 	.caja-cir-todo{
 		position: relative;
 		bottom: $sesenta;
@@ -49,16 +48,16 @@
 			font-size:$doce;
 		}
 		.read-more{
+			margin-bottom: 30px;
 			p{
 				font-weight:$cuatrocientos;	
 				padding:$cinco;
 				background-color: $color_cir;
 				margin: $cuarenta $ochenta $cero $ochenta;
-			}			
+			}	
 		}
 	}
 }
-
 
 .welcome{
 	background-color: $background_gris;
@@ -152,13 +151,12 @@ footer{
 	padding: $cincuenta $veinte;
 	color: $background_amarillo;
 	.footer-follow{
-		.follow, .talking, .contact{
+		.follow{
+			margin-bottom: 30px;
 			h4{
 				font-weight: $doscientos-w;
 				margin-bottom: $treinta;
 			}	
-		}
-		.follow{
 			img{
 				margin-left: $quince;
 				background-color: $background_amarillo;
@@ -168,6 +166,7 @@ footer{
 			}
 		}
 		.talking{
+			margin-bottom: 30px;			
 			.fa-quote-left{
 				color: $color_durazno;
 				font-size: $treinta;
@@ -179,6 +178,7 @@ footer{
 			}
 		}
 		.contact{
+			margin-bottom: 30px;			
 			h5{
 				font-weight: $seiscientos-w;
 				margin-bottom: $veinte;
@@ -203,17 +203,24 @@ footer{
 	}
 }
 
-
-
 @media (min-width: 1px) and (max-width: 600px){
+	.navbar{
+		.navbar-default{
+			.navbar-nav{
+				padding-left: $cero;
+				text-align: center;
+			}
+		}
+	}
 	.carrusel{
 		position: relative;
-		top: 80px;
+		top: 50px;
 	}
 	.sect-dos{
 		.caja-cir-todo{
 		position: relative;
-		bottom: 0;
+		bottom: -80px;
+		padding-bottom:70px;
 			.img-cir {
 				p{
 					font-weight:$cuatrocientos;	
@@ -223,13 +230,23 @@ footer{
 				}	
 			}
 		}
-	}	
+	}
+	.about-gift{
+		.text-about-welcome{
+			.fa-circle-thin{
+			    left: 170px;
+			}
+		}	
+	}
+	footer{
+		.footer-follow{
+			.follow{
+				img{
+					margin-left: $treinta;
+					margin-bottom: $quince;
+				}
+			}
+		}
+	}
 }
-
-
-
-
-
-
-
 
